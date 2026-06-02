@@ -1,0 +1,11 @@
+pandas
+pysus
+numpy
+matplotlib
+tensorflow
+xgboost
+keras
+keras-tuner
+scikit-learn
+statsmodels
+pyarrow
