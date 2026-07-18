@@ -2,5 +2,5 @@ FROM python:3.11-slim
 WORKDIR /app
 COPY requirements-extract.txt .
 RUN pip install --no-cache-dir -r requirements-extract.txt
-COPY src/ ./src/
-CMD ["python", "src/collect_data.py"]
+COPY src/medallion/bronze/ ./src/medallion/bronze/
+CMD ["python", "src/medallion/bronze/collect_data.py"]

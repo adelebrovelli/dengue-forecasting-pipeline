@@ -1,0 +1,6 @@
+FROM python:3.11-slim
+WORKDIR /app
+COPY requirements-clean-silver.txt .
+RUN pip install --no-cache-dir -r requirements-clean-silver.txt
+COPY src/medallion/silver/ ./src/medallion/silver/
+CMD ["python", "src/medallion/silver/clean_silver.py"]
