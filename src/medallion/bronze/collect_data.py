@@ -4,7 +4,7 @@ import os
 
 os.makedirs("data/raw", exist_ok=True)
 
-anos = range(2018, 2025)
+anos = range(2018, 2020)
 uf = "PE"
 municipio_jaboatao = "260790"
 
